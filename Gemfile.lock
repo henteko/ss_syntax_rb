@@ -1,0 +1,14 @@
+PATH
+  remote: .
+  specs:
+    ssnotation (0.0.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  ssnotation!
