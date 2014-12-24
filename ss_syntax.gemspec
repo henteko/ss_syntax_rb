@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.summary     = "Short Story Syntax"
   s.authors     = ["henteko"]
   s.email       = 'henteko07@gmail.com'
-  s.homepage    = 'http://rubygems.org/gems/ss_syntax'
+  s.homepage    = 'https://github.com/henteko/ss_syntax_rb'
   s.license     = 'MIT'
 
   s.files         = `git ls-files -z`.split("\x0")
