@@ -38,7 +38,9 @@ module SsSyntax
         case check_type(line)
           when Parses::Type::Character
             key, name = Parses::Character.get(line)
-            @charactes[key] = name
+            if key != nil && name != nil
+              @charactes[key] = name
+            end
           when Parses::Type::Comment
           when Parses::Type::HeartVoice
             parse_text += Parses::HeartVoice.get(line, @charactes) + "\n"
