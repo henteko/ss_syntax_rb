@@ -1,4 +1,4 @@
-module SsNotation
+module SsSyntax
   module Parses
     class HeartVoice
       def self.check(text)

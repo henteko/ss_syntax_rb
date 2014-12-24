@@ -1,4 +1,4 @@
-module SsNotation
+module SsSyntax
   module Parses
     module Type; end
       Type::Character  = 1

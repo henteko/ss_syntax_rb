@@ -1,4 +1,4 @@
-module SsNotation
+module SsSyntax
   module Parses
     class Remark
       def self.check(text)

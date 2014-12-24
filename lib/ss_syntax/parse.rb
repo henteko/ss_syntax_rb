@@ -1,11 +1,11 @@
-require 'ssnotation/parses/character'
-require 'ssnotation/parses/comment'
-require 'ssnotation/parses/heart_voice'
-require 'ssnotation/parses/remark'
-require 'ssnotation/parses/none'
-require 'ssnotation/parses/type'
+require 'ss_syntax/parses/character'
+require 'ss_syntax/parses/comment'
+require 'ss_syntax/parses/heart_voice'
+require 'ss_syntax/parses/remark'
+require 'ss_syntax/parses/none'
+require 'ss_syntax/parses/type'
 
-module SsNotation
+module SsSyntax
   class Parse
     attr_reader :text, :characters
 
@@ -30,7 +30,7 @@ module SsNotation
     end
 
     private
-    
+
     def parse_text
       parse_text = ''
       @text.each_line do |line|

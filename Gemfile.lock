@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    ssnotation (0.0.0)
+    ss_syntax (0.0.1)
       slop
 
 GEM
@@ -13,4 +13,4 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  ssnotation!
+  ss_syntax!

@@ -1,7 +1,7 @@
 require 'slop'
-require 'ssnotation/parse'
+require 'ss_syntax/parse'
 
-module SsNotation
+module SsSyntax
   class CommandBuilder
     def initialize(arguments = ARGV)
       @arguments = arguments

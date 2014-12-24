@@ -1,7 +1,7 @@
-require 'ssnotation/parse'
+require 'ss_syntax/parse'
 
-module SsNotation
-  class SsNotation
+module SsSyntax
+  class SsSyntax
     attr_reader :text, :type
 
     def initialize(text, type = :text)

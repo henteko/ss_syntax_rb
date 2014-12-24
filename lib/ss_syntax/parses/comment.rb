@@ -1,4 +1,4 @@
-module SsNotation
+module SsSyntax
   module Parses
     class Comment
       def self.check(text)

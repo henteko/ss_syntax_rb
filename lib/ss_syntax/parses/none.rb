@@ -1,4 +1,4 @@
-module SsNotation
+module SsSyntax
   module Parses
     class None
       def self.check(text)

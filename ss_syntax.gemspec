@@ -1,15 +1,14 @@
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'ssnotation/version'
+require 'ss_syntax/version'
 
 Gem::Specification.new do |s|
-  s.name        = 'ssnotation'
-  s.version     = SsNotation::VERSION
-  s.summary     = "ss notation"
+  s.name        = 'ss_syntax'
+  s.version     = SsSyntax::VERSION
+  s.summary     = "Short Story Syntax"
   s.authors     = ["henteko"]
   s.email       = 'henteko07@gmail.com'
-  s.files       = ["lib/ssnotation.rb"]
-  s.homepage    = 'http://rubygems.org/gems/ssnotation'
+  s.homepage    = 'http://rubygems.org/gems/ss_syntax'
   s.license     = 'MIT'
 
   s.files         = `git ls-files -z`.split("\x0")

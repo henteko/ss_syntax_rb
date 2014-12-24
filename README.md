@@ -3,17 +3,17 @@
 ## 使い方
 
 ```sh
-$ ssnotation example/example.ss // default -t
-$ ssnotation --html example/example.ss // puts html
+$ sssy example/example.ss // default -t
+$ sssy --html example/example.ss // puts html
 ```
 
 or
 
 ```rb
-require 'ssnotation'
+require 'ss_syntax'
 
-text = SsNotation::SsNotation.new(src).parse() # default :text
-html = SsNotation::SsNotation.new(src, :html).parse()
+text = SsSyntax::SsSyntax.new(src).parse() # default :text
+html = SsSyntax::SsSyntax.new(src, :html).parse()
 ```
 
 ## 各記法
