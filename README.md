@@ -3,8 +3,8 @@
 ## 使い方
 
 ```sh
-$ ssnotation example.ss // default -t
-$ ssnotation -h example.ss // puts html
+$ ssnotation example/example.ss // default -t
+$ ssnotation --html example/example.ss // puts html
 ```
 
 or

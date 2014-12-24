@@ -2,10 +2,12 @@ PATH
   remote: .
   specs:
     ssnotation (0.0.0)
+      slop
 
 GEM
   remote: https://rubygems.org/
   specs:
+    slop (3.6.0)
 
 PLATFORMS
   ruby
