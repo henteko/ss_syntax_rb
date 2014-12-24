@@ -1,5 +1,16 @@
 # ss記法
 
+## インストール
+
+```sh
+gem install ss_syntax
+
+# or
+
+gem 'ss_syntax'
+bundle install
+```
+
 ## 使い方
 
 ```sh
