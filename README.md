@@ -2,8 +2,9 @@
 
 ## 使い方
 
-```rb
-ssnotation example.ss
+```sh
+$ ssnotation example.ss // default -t
+$ ssnotation -h example.ss // puts html
 ```
 
 or
@@ -11,7 +12,8 @@ or
 ```rb
 require 'ssnotation'
 
-text = SsNotation.parse(src)
+text = SsNotation.parse(src) # default :text
+html = SsNotation.parse(src, :html)
 ```
 
 ## 各記法
