@@ -3,4 +3,15 @@
 $LOAD_PATH.unshift File.expand_path("../../lib", __FILE__)
 require "ssnotation"
 
-SsNotation.hello
+text = '
+# 登場人物
+* 1 男
+* 女 小倉唯
+- 女2 幼
+
+これはある日のある物語
+1: ねむい
+女_ なにこの人…
+女2: 男君…
+'
+puts SsNotation::SsNotation.new(text, :html).parse()

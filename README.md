@@ -12,8 +12,8 @@ or
 ```rb
 require 'ssnotation'
 
-text = SsNotation.parse(src) # default :text
-html = SsNotation.parse(src, :html)
+text = SsNotation::SsNotation.new(src).parse() # default :text
+html = SsNotation::SsNotation.new(src, :html).parse()
 ```
 
 ## 各記法
