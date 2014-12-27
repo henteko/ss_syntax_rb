@@ -11,7 +11,7 @@ module SsSyntax
 
       def self.get(text)
         match = text.match(/^\* (.+) (.+)/) || text.match(/^- (.+) (.+)/)
-        return nil, nil if match == nil
+        return nil, nil if match == nil # TODO: raiseしてあげた方がいいかも
         return match[1], match[2]
       end
     end
