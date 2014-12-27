@@ -1,4 +1,5 @@
 # ss記法
+[![Build Status](https://travis-ci.org/henteko/ss_syntax_rb.svg?branch=master)](https://travis-ci.org/henteko/ss_syntax_rb)
 
 ## インストール
 
