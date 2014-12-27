@@ -46,6 +46,12 @@ describe SsSyntax::Parses::HeartVoice do
         expect(SsSyntax::Parses::HeartVoice.get(text, @characters)).to eq re_text
       end
 
+      it 'with gion' do
+        text = '1_ hoge _ zzz'
+        re_text = 'hoge（hoge）zzz'
+        expect(SsSyntax::Parses::HeartVoice.get(text, @characters)).to eq re_text
+      end
+
       it 'not character' do
         text = 'fuga_ hoge'
         re_text = 'fuga（hoge）'

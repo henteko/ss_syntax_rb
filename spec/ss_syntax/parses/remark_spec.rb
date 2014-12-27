@@ -46,6 +46,12 @@ describe SsSyntax::Parses::Remark do
         expect(SsSyntax::Parses::Remark.get(text, @characters)).to eq re_text
       end
 
+      it 'with gion' do
+        text = '1: hoge : zzz'
+        re_text = 'hoge「hoge」zzz'
+        expect(SsSyntax::Parses::Remark.get(text, @characters)).to eq re_text
+      end
+
       it 'not character' do
         text = 'fuga: hoge'
         re_text = 'fuga「hoge」'
