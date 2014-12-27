@@ -23,8 +23,12 @@ module SsSyntax
       html_text = ''
       @parse_text.each_line do |line|
         line.chomp!
-        html_text += "<p>#{line}</p>" if line != ''
-        html_text += "<br />"
+        
+        if line != ''
+          html_text += "<p>#{line}</p>"
+        else 
+          html_text += "<br />"
+        end
       end
 
       html_text

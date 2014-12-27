@@ -27,7 +27,7 @@ EOS
 
   describe '#to_h' do
     it 'default' do
-      re_html = "<br /><p>hoge「hoge」</p><br /><p>fuga（fuga）</p><br />"
+      re_html = "<br /><p>hoge「hoge」</p><p>fuga（fuga）</p>"
 
       expect(SsSyntax::Parse.new(@text).to_h).to eq re_html
     end
