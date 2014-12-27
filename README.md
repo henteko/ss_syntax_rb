@@ -51,8 +51,12 @@ html = SsSyntax::SsSyntax.new(src, :html).parse()
 男: 今日は眠い
 1: 今日は眠い
 
+# 擬音も書ける
+1: 眠い :zzz
+
 # 結果
 # 男「今日は眠い」
+# 男「眠い」zzz
 ```
 
 ### 心の声
@@ -62,8 +66,12 @@ html = SsSyntax::SsSyntax.new(src, :html).parse()
 
 1_ 女は今日も可愛いなぁ
 
+# 擬音
+1_ わかる _ zzz
+
 # 結果
 # 男（女は今日も可愛いなぁ）
+# 男（わかる）zzz
 ```
 
 ### 地の文
