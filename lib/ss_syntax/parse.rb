@@ -23,7 +23,8 @@ module SsSyntax
       html_text = ''
       @parse_text.each_line do |line|
         line.chomp!
-        html_text += "<p>#{line}</p><br />"
+        html_text += "<p>#{line}</p>" if line != ''
+        html_text += "<br />"
       end
 
       html_text
@@ -47,7 +48,7 @@ module SsSyntax
           when Parses::Type::Remark
             parse_text += Parses::Remark.get(line, @charactes) + "\n"
           when Parses::Type::None
-            parse_text += Parses::None.get(line) + "\n" if line != ''
+            parse_text += Parses::None.get(line) + "\n"
           else
             raise 'not support type'
         end
