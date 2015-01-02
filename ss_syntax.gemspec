@@ -6,6 +6,7 @@ Gem::Specification.new do |s|
   s.name        = 'ss_syntax'
   s.version     = SsSyntax::VERSION
   s.summary     = "Short Story Syntax"
+  s.description = "SS Syntax"
   s.authors     = ["henteko"]
   s.email       = 'henteko07@gmail.com'
   s.homepage    = 'https://github.com/henteko/ss_syntax_rb'
@@ -16,7 +17,7 @@ Gem::Specification.new do |s|
   s.test_files    = s.files.grep(%r{^(test|spec|features)/})
   s.require_paths = ["lib"]
 
-  s.add_dependency "slop"
-  s.add_development_dependency "rake"
-  s.add_development_dependency "rspec", "~> 3.1.0"
+  s.add_runtime_dependency 'slop', '~> 3.6', '>= 3.6.0'
+  s.add_development_dependency 'rake', '~> 10.1', '>= 10.1.0'
+  s.add_development_dependency 'rspec', '~> 3.1', '>= 3.1.0'
 end
